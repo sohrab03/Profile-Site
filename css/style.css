@@ -32,13 +32,13 @@ img {
 /* Footer styles */
 footer {
   background: #333;
-  color: #fff;
+  color: white;
   text-align: center;
   padding: 1em 0;
-  position: fixed;
-  bottom: 0;
+  position: static; /* Remove fixed positioning */
   width: 100%;
 }
+
 /* Navigation bar */
 nav {
   background-color: #333;
