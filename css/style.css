@@ -14,31 +14,6 @@ header {
   padding: 1em 0;
 }
 
-/* Main content styles */
-main {
-  padding: 20px;
-}
-
-section {
-  margin: 20px 0;
-}
-
-img {
-  max-width: 200px;
-  height: auto;
-  border-radius: 50%;
-}
-
-/* Footer styles */
-footer {
-  background: #333;
-  color: white;
-  text-align: center;
-  padding: 1em 0;
-  position: static; /* Remove fixed positioning */
-  width: 100%;
-}
-
 /* Navigation bar */
 nav {
   background-color: #333;
@@ -56,97 +31,38 @@ nav a {
 nav a:hover {
   text-decoration: underline;
 }
-article img {
-  width: 100%; /* Scale to fit container */
-  max-width: 200px; /* Prevent image from exceeding 600px wide */
-  height: auto; /* Maintain aspect ratio */
-  margin: 10px 0;
-  border: 2px solid #ddd;
-  border-radius: 5px;
-}
-/* Portfolio section */
-#portfolio {
-  text-align: center;
+
+/* Main content styles */
+main {
   padding: 20px;
 }
 
-.project {
-  display: inline-block;
-  width: 300px;
-  margin: 20px;
-  text-align: left;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+section {
+  margin: 20px 0;
 }
 
-.project img {
-  width: 100%;
-  height: auto;
-}
-
-.project h3 {
-  font-size: 1.2em;
-  margin: 10px;
-}
-
-.project p {
-  font-size: 0.9em;
-  margin: 10px;
-  color: #555;
-}
-
-.project a {
-  display: block;
-  text-align: center;
+/* Footer styles */
+footer {
   background: #333;
   color: white;
-  text-decoration: none;
-  padding: 10px;
-  border-top: 1px solid #ddd;
+  text-align: center;
+  padding: 1em 0;
+  position: static;
+  width: 100%;
 }
 
-.project a:hover {
-  background: #555;
-}
-#project-details {
-  padding: 20px;
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: left;
-}
-
-#project-details img {
-  max-width: 300px; /* Limit image width to 300px */
+/* Global styles for all images */
+img {
+  max-width: 300px; /* Limit the width to 100 pixels */
+  max-height: 300px; /* Limit the height to 100 pixels */
+  width: auto; /* Allow width to adjust naturally if smaller */
   height: auto; /* Maintain aspect ratio */
-  margin-bottom: 20px;
-  border-radius: 5px;
-  border: 1px solid #ddd;
-  display: block; /* Center align image */
-  margin-left: auto;
-  margin-right: auto;
+  object-fit: cover; /* Crop and fill the space proportionally */
+  display: block;
+  margin: 0 auto; /* Center-align images */
+  border-radius: 5px; /* Add slight rounding for better appearance */
 }
 
-#project-details h2 {
-  font-size: 2em;
-  margin-bottom: 10px;
-}
-
-#project-details p,
-#project-details ul {
-  font-size: 1em;
-  margin: 10px 0;
-  line-height: 1.6;
-}
-
-#project-details ul {
-  padding-left: 20px;
-}
-
-#project-details li {
-  margin-bottom: 5px;
-}
 /* Portfolio Section */
 #portfolio {
   text-align: center;
@@ -173,15 +89,18 @@ article img {
 }
 
 .project-card:hover {
-  transform: scale(1.05); /* Slight zoom effect */
+  transform: scale(1.05);
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
 
 .project-card img {
-  width: 100%;
-  height: auto;
+  max-width: 100px; /* Restrict project card images to 100x100 pixels */
+  max-height: 100px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover; /* Crop excess image content */
   border-radius: 5px;
-  margin-bottom: 15px;
+  margin: 0 auto 15px auto;
 }
 
 .project-card h3 {
@@ -208,6 +127,8 @@ article img {
 .project-card a:hover {
   background-color: #555;
 }
+
+/* Responsive Design */
 @media (max-width: 768px) {
   .project-container {
     flex-direction: column;
@@ -215,6 +136,6 @@ article img {
   }
 
   .project-card {
-    width: 90%; /* Full-width on smaller screens */
+    width: 90%;
   }
 }
