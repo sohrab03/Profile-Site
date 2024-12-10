@@ -110,3 +110,40 @@ article img {
 .project a:hover {
   background: #555;
 }
+#project-details {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#project-details img {
+  max-width: 300px; /* Limit image width to 300px */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  display: block; /* Center align image */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#project-details h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+#project-details p,
+#project-details ul {
+  font-size: 1em;
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+#project-details ul {
+  padding-left: 20px;
+}
+
+#project-details li {
+  margin-bottom: 5px;
+}
