@@ -64,3 +64,49 @@ article img {
   border: 2px solid #ddd;
   border-radius: 5px;
 }
+/* Portfolio section */
+#portfolio {
+  text-align: center;
+  padding: 20px;
+}
+
+.project {
+  display: inline-block;
+  width: 300px;
+  margin: 20px;
+  text-align: left;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+}
+
+.project h3 {
+  font-size: 1.2em;
+  margin: 10px;
+}
+
+.project p {
+  font-size: 0.9em;
+  margin: 10px;
+  color: #555;
+}
+
+.project a {
+  display: block;
+  text-align: center;
+  background: #333;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.project a:hover {
+  background: #555;
+}
