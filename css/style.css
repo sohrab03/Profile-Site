@@ -56,3 +56,11 @@ nav a {
 nav a:hover {
   text-decoration: underline;
 }
+/* Style for images in the Technical Interests page */
+article img {
+  max-width: 100%; /* Ensure images resize within their container */
+  height: auto;
+  margin: 10px 0;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+}
