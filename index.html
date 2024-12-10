@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
-      <nav>
+    <header role="banner">
+      <nav role="navigation" aria-label="Main Navigation">
         <a href="index.html">About Me</a>
         <a href="technical.html">Technical Interests</a>
         <a href="portfolio.html">Portfolio</a>
@@ -16,18 +16,20 @@
       </nav>
       <h1>About Me</h1>
     </header>
-    <main>
-      <section id="about">
-        <h2>About Me</h2>
+
+    <main role="main">
+      <section id="about" role="region" aria-labelledby="about-title">
+        <h2 id="about-title">About Me</h2>
         <p>
           My name is Sohrab Rahman, and I am currently studying a Degree in
-          Computer Science at the Universirty of Hertfordshire, I also currently
+          Computer Science at the University of Hertfordshire. I also currently
           work at Apple Inc part time.
         </p>
-        <img src="images/placeholder.jpg" alt="Profile Picture Placeholder" />
+        <img src="images/Heading.jpg" alt="Profile Picture Placeholder" />
       </section>
     </main>
-    <footer>
+
+    <footer role="contentinfo">
       <p>&copy; 2024 Sohrab Rahman</p>
     </footer>
   </body>

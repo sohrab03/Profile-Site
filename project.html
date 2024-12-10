@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
-      <nav>
+    <header role="banner">
+      <nav role="navigation" aria-label="Main Navigation">
         <a href="index.html">About Me</a>
         <a href="technical.html">Technical Interests</a>
         <a href="portfolio.html">Portfolio</a>
@@ -16,10 +16,13 @@
       </nav>
       <h1>Project Details</h1>
     </header>
-    <main>
-      <!-- Project 1 -->
-      <section id="project-details">
-        <h2>Project 1: Expense Tracker</h2>
+    <main role="main">
+      <section
+        id="project-details"
+        role="region"
+        aria-labelledby="project1-title"
+      >
+        <h2 id="project1-title">Project 1: Expense Tracker</h2>
         <img src="images/Expen.jpg" alt="Expense Tracker App Screenshot" />
         <p>
           <strong>Description:</strong> This project is a web-based application
@@ -52,10 +55,12 @@
         </p>
       </section>
       <hr />
-
-      <!-- Project 2 -->
-      <section id="project-details">
-        <h2>Project 2: E-Commerce Website</h2>
+      <section
+        id="project-details-2"
+        role="region"
+        aria-labelledby="project2-title"
+      >
+        <h2 id="project2-title">Project 2: E-Commerce Website</h2>
         <img src="images/Ecom.jpg" alt="E-Commerce Website Screenshot" />
         <p>
           <strong>Description:</strong> A full-stack e-commerce website for
@@ -88,10 +93,12 @@
         </p>
       </section>
       <hr />
-
-      <!-- Project 3 -->
-      <section id="project-details">
-        <h2>Project 3: Weather Forecast App</h2>
+      <section
+        id="project-details-3"
+        role="region"
+        aria-labelledby="project3-title"
+      >
+        <h2 id="project3-title">Project 3: Weather Forecast App</h2>
         <img src="images/Weather.jpg" alt="Weather Forecast App Screenshot" />
         <p>
           <strong>Description:</strong> A weather forecast application that
@@ -122,7 +129,7 @@
         </p>
       </section>
     </main>
-    <footer>
+    <footer role="contentinfo">
       <p>&copy; 2024 Sohrab Rahman</p>
     </footer>
   </body>

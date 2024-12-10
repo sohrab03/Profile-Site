@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
-      <nav>
+    <header role="banner">
+      <nav role="navigation" aria-label="Main Navigation">
         <a href="index.html">About Me</a>
         <a href="technical.html">Technical Interests</a>
         <a href="portfolio.html">Portfolio</a>
@@ -16,27 +16,30 @@
       </nav>
       <h1>Portfolio</h1>
     </header>
-    <main>
-      <section id="portfolio">
-        <h2>My Projects</h2>
+    <main role="main">
+      <section id="portfolio" role="region" aria-labelledby="portfolio-title">
+        <h2 id="portfolio-title">My Projects</h2>
         <div class="project-container">
-          <!-- Project 1 -->
           <div class="project-card">
-            <img src="images/Expen.jpg" alt="Project 1 Thumbnail" />
+            <img
+              src="images/Expen.jpg"
+              alt="Screenshot of Expense Tracker interface"
+            />
             <h3>Expense Tracker</h3>
             <p>Track your daily expenses effectively.</p>
             <a href="project.html" class="view-now-btn">View Now</a>
           </div>
-          <!-- Project 2 -->
           <div class="project-card">
-            <img src="images/Ecom.jpg" alt="Project 2 Thumbnail" />
+            <img src="images/Ecom.jpg" alt="Screenshot of E-Commerce Website" />
             <h3>E-Commerce Website</h3>
             <p>Showcase products for small businesses.</p>
             <a href="project.html" class="view-now-btn">View Now</a>
           </div>
-          <!-- Project 3 -->
           <div class="project-card">
-            <img src="images/Weather.jpg" alt="Project 3 Thumbnail" />
+            <img
+              src="images/Weather.jpg"
+              alt="Screenshot of Weather Application"
+            />
             <h3>Weather Application</h3>
             <p>Get real-time weather updates.</p>
             <a href="project.html" class="view-now-btn">View Now</a>
@@ -44,20 +47,25 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer role="contentinfo">
       <p>&copy; 2024 Sohrab Rahman</p>
     </footer>
-
-    <!-- Popup Modal -->
-    <div id="popup-modal" class="modal">
+    <div
+      id="popup-modal"
+      class="modal"
+      role="dialog"
+      aria-labelledby="modal-title"
+      aria-hidden="true"
+    >
       <div class="modal-content">
-        <span id="close-modal" class="close">&times;</span>
-        <h2>Interested in More Details?</h2>
+        <span id="close-modal" class="close" role="button" tabindex="0"
+          >&times;</span
+        >
+        <h2 id="modal-title">Interested in More Details?</h2>
         <p>Check out the project details page for more information!</p>
         <a href="project.html" class="button">Go to Project Page</a>
       </div>
     </div>
-
     <script src="js/script.js"></script>
   </body>
 </html>

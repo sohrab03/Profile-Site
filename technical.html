@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
-      <nav>
+    <header role="banner">
+      <nav role="navigation" aria-label="Main Navigation">
         <a href="index.html">About Me</a>
         <a href="technical.html">Technical Interests</a>
         <a href="portfolio.html">Portfolio</a>
@@ -16,15 +16,12 @@
       </nav>
       <h1>Technical Interests</h1>
     </header>
-    <main>
-      <section id="interests">
-        <article>
-          <h2>Artificial Intelligence (AI)</h2>
-          <img
-            src="images/AI.jpg
-            "
-            alt="Artificial Intelligence Placeholder"
-          />
+    <main role="main">
+      <section id="interests" role="region" aria-labelledby="interests-title">
+        <h2 id="interests-title">My Technical Interests</h2>
+        <article role="article" aria-labelledby="ai-title">
+          <h2 id="ai-title">Artificial Intelligence (AI)</h2>
+          <img src="images/AI.jpg" alt="Artificial Intelligence Placeholder" />
           <p>
             One of my core technical interests is artificial intelligence. I am
             captivated by its ability to replicate and enhance human
@@ -47,8 +44,8 @@
             across industries.
           </p>
         </article>
-        <article>
-          <h2>Software Development</h2>
+        <article role="article" aria-labelledby="sd-title">
+          <h2 id="sd-title">Software Development</h2>
           <img src="images/Sd.jpg" alt="Software Development Placeholder" />
           <p>
             Software development is another area that greatly interests me. I
@@ -70,8 +67,8 @@
             align with the dynamic demands of the field.
           </p>
         </article>
-        <article>
-          <h2>Data Science</h2>
+        <article role="article" aria-labelledby="ds-title">
+          <h2 id="ds-title">Data Science</h2>
           <img src="images/DataScience.jpg" alt="Data Science Placeholder" />
           <p>
             Data science appeals to me because of its ability to turn raw data
@@ -94,7 +91,7 @@
         </article>
       </section>
     </main>
-    <footer>
+    <footer role="contentinfo">
       <p>&copy; 2024 Sohrab Rahman</p>
     </footer>
   </body>
