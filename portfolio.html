@@ -19,37 +19,49 @@
     <main>
       <section id="portfolio">
         <h2>My Projects</h2>
-        <div class="project">
-          <img src="images/Expen.jpg" alt="Project 1 Thumbnail" />
-          <h3>Expense Tracekr</h3>
-          <p>
-            This project is a web-based application that helps users track their
-            daily expenses.
-          </p>
-          <a href="project.html">View Details</a>
-        </div>
-        <div class="project">
-          <img src="images/Ecom.jpg" alt="Project 2 Thumbnail" />
-          <h3>Ecommerce Website</h3>
-          <p>
-            A full-stack e-commerce website for small businesses to showcase
-            their products online.
-          </p>
-          <a href="project.html">View Details</a>
-        </div>
-        <div class="project">
-          <img src="images/Weather.jpg" alt="Project 3 Thumbnail" />
-          <h3>Weather Application</h3>
-          <p>
-            A weather forecast application that provides real-time weather data
-            for any location.
-          </p>
-          <a href="project.html">View Details</a>
+        <div class="project-container">
+          <!-- Add your project cards here -->
+          <div class="project-card">
+            <img
+              src="images/project1-placeholder.jpg"
+              alt="Project 1 Thumbnail"
+            />
+            <h3>Expense Tracker</h3>
+            <p>Track your daily expenses effectively.</p>
+          </div>
+          <div class="project-card">
+            <img
+              src="images/project2-placeholder.jpg"
+              alt="Project 2 Thumbnail"
+            />
+            <h3>E-Commerce Website</h3>
+            <p>Showcase products for small businesses.</p>
+          </div>
+          <div class="project-card">
+            <img
+              src="images/project3-placeholder.jpg"
+              alt="Project 3 Thumbnail"
+            />
+            <h3>Weather Application</h3>
+            <p>Get real-time weather updates.</p>
+          </div>
         </div>
       </section>
     </main>
     <footer>
       <p>&copy; 2024 Sohrab Rahman</p>
     </footer>
+
+    <!-- Popup Modal -->
+    <div id="popup-modal" class="modal">
+      <div class="modal-content">
+        <span id="close-modal" class="close">&times;</span>
+        <h2>Interested in More Details?</h2>
+        <p>Check out the project details page for more information!</p>
+        <a href="project.html" class="button">Go to Project Page</a>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
