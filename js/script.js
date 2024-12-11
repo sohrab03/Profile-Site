@@ -25,3 +25,14 @@ window.addEventListener("click", (event) => {
     modal.style.display = "none";
   }
 });
+document.addEventListener("keydown", (event) => {
+  if (event.altKey && event.key === "1") {
+    window.location.href = "index.html"; // Go to About Me
+  } else if (event.altKey && event.key === "2") {
+    window.location.href = "technical.html"; // Go to Technical Interests
+  } else if (event.altKey && event.key === "3") {
+    window.location.href = "portfolio.html"; // Go to Portfolio
+  } else if (event.altKey && event.key === "4") {
+    window.location.href = "project.html"; // Go to Project Details
+  }
+});
